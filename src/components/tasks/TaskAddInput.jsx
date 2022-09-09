@@ -1,3 +1,3 @@
 export const TaskAddInput = () => {
-  return <div>TaskAddInput</div>;
+  return <div></div>;
 };
