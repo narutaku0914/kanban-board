@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 export const TaskAddInput = ({
   inputText,
   setInputText,
@@ -5,15 +7,17 @@ export const TaskAddInput = ({
   setTaskList,
 }) => {
   const handleSubmit = (e) => {
+    const taskId = uuidv4();
+
     e.preventDefault();
 
     // taskListへ追加
     setTaskList([
       ...taskList,
       {
-        id: taskList.length,
+        id: taskId,
         text: inputText,
-        draggableId: `task-${taskList.length}`,
+        draggableId: `task-${taskId}`,
       },
     ]);
 
