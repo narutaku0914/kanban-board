@@ -8,7 +8,7 @@ export const TaskAddInput = ({
     e.preventDefault();
 
     // taskListへ追加
-    setTaskList([...taskList, { text: inputText }]);
+    setTaskList([...taskList, { id: taskList.length, text: inputText }]);
 
     // 入力欄を空に
     setInputText("");
