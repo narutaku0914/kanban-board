@@ -1,3 +1,7 @@
 export const AddTaskCardButton = () => {
-  return <div>AddTaskCardButton</div>;
+  return (
+    <div>
+      <button className="addTaskCardButton">+</button>
+    </div>
+  );
 };
