@@ -29,8 +29,6 @@ export const TaskAddInput = ({
     setInputText(e.target.value);
   };
 
-  console.log(taskList);
-
   return (
     <div>
       <form onSubmit={handleSubmit}>
